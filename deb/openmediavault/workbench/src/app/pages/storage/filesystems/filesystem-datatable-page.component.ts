@@ -3,7 +3,7 @@
  *
  * @license   http://www.gnu.org/licenses/gpl.html GPL Version 3
  * @author    Volker Theile <volker.theile@openmediavault.org>
- * @copyright Copyright (c) 2009-2024 Volker Theile
+ * @copyright Copyright (c) 2009-2025 Volker Theile
  *
  * OpenMediaVault is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -210,6 +210,7 @@ export class FilesystemDatatablePageComponent implements OnInit {
           minSelected: 1,
           maxSelected: 1,
           constraint: [
+            { operator: 'n', arg0: { prop: 'canonicaldevicefile' } },
             // Enable button if the file system has a `/etc/fstab` entry.
             // This is because monitoring the warning threshold is only
             // possible for mounted file systems.
@@ -283,7 +284,8 @@ export class FilesystemDatatablePageComponent implements OnInit {
         tooltip: gettext('Show details'),
         enabledConstraints: {
           minSelected: 1,
-          maxSelected: 1
+          maxSelected: 1,
+          constraint: [{ operator: 'n', arg0: { prop: 'canonicaldevicefile' } }]
         },
         execute: {
           type: 'url',
@@ -296,6 +298,7 @@ export class FilesystemDatatablePageComponent implements OnInit {
         tooltip: gettext('Unmount'),
         enabledConstraints: {
           constraint: [
+            { operator: 'n', arg0: { prop: 'mountpoint' } },
             // Disable button if file system is in use or read-only.
             {
               operator: 'if',
@@ -326,10 +329,9 @@ export class FilesystemDatatablePageComponent implements OnInit {
           type: 'request',
           request: {
             service: 'FileSystemMgmt',
-            method: 'umount',
+            method: 'umountByDir',
             params: {
-              id: '{{ devicefile }}',
-              fstab: true
+              dir: '{{ mountpoint }}'
             },
             progressMessage: gettext('Please wait, unmounting the file system ...')
           }

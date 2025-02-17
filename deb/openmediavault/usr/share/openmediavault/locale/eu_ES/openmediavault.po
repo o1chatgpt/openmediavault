@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-12 10:32+0100\n"
+"POT-Creation-Date: 2025-02-14 00:18+0100\n"
 "PO-Revision-Date: 2012-03-17 01:48+0000\n"
 "Last-Translator: Aitor Salaberria <amento@ni.eus>, 2024\n"
 "Language-Team: Basque (Spain) (http://app.transifex.com/openmediavault/openmediavault/language/eu_ES/)\n"
@@ -228,6 +228,9 @@ msgstr ""
 msgid "9 months"
 msgstr ""
 
+msgid "A (5 GHz)"
+msgstr ""
+
 msgid ""
 "A reboot is needed to fully apply the changes introduced by package "
 "installation or upgrade."
@@ -331,7 +334,20 @@ msgid "All packages will be upgraded. Do you want to proceed?"
 msgstr ""
 
 msgid ""
-"Allow clients to attempt to store OS/2 state extended attributes on a share."
+"Allow clients to attempt to access extended attributes on a share. The "
+"underlying filesystem exposed by the share must support extended attributes."
+msgstr ""
+
+msgid "Allow following symbolic links in the home directories."
+msgstr ""
+
+msgid "Allow following symbolic links in the share."
+msgstr ""
+
+msgid "Allow symbolic links to areas that are outside the home directories."
+msgstr ""
+
+msgid "Allow symbolic links to areas that are outside the share."
 msgstr ""
 
 msgid ""
@@ -447,16 +463,19 @@ msgstr ""
 msgid "Authentication required"
 msgstr ""
 
-msgid "Auto"
+msgid "Automatic"
 msgstr ""
 
-msgid "Auto logout"
+msgid "Automatic logout"
 msgstr ""
 
 msgid "Available"
 msgstr ""
 
 msgid "Azerbaijan"
+msgstr ""
+
+msgid "B/G (2.4 GHz)"
 msgstr ""
 
 msgid "Back"
@@ -472,6 +491,9 @@ msgid "Bahamas"
 msgstr ""
 
 msgid "Bahrain"
+msgstr ""
+
+msgid "Band"
 msgstr ""
 
 msgid "Bangladesh"
@@ -742,9 +764,6 @@ msgid "Copy"
 msgstr ""
 
 msgid "Copy permissions"
-msgstr ""
-
-msgid "Copy public SSH key"
 msgstr ""
 
 msgid "Copy to clipboard"
@@ -1282,6 +1301,9 @@ msgstr ""
 msgid "Flags"
 msgstr ""
 
+msgid "Follow symlinks"
+msgstr ""
+
 msgid "Force SSL/TLS"
 msgstr ""
 
@@ -1585,6 +1607,12 @@ msgid "Install"
 msgstr ""
 
 msgid "Install plugin"
+msgstr ""
+
+msgid "Install public key to remote machine"
+msgstr ""
+
+msgid "Install security updates unattended."
 msgstr ""
 
 msgid "Install updates"
@@ -2337,6 +2365,9 @@ msgstr ""
 msgid "Please choose the method to wipe the device."
 msgstr ""
 
+msgid "Please note that values >= 128 do not permit the disk to spin down."
+msgstr ""
+
 msgid "Please wait ..."
 msgstr ""
 
@@ -2954,6 +2985,9 @@ msgid "Slovenia"
 msgstr ""
 
 msgid "Snapshots"
+msgstr ""
+
+msgid "Software"
 msgstr ""
 
 msgid "Software Failure.   Press left mouse button to continue."
@@ -3997,6 +4031,9 @@ msgid "Western Sahara"
 msgstr ""
 
 msgid "Wi-Fi"
+msgstr ""
+
+msgid "Wide links"
 msgstr ""
 
 msgid "Wipe"

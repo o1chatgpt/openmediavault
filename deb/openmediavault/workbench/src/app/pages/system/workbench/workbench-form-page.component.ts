@@ -3,7 +3,7 @@
  *
  * @license   http://www.gnu.org/licenses/gpl.html GPL Version 3
  * @author    Volker Theile <volker.theile@openmediavault.org>
- * @copyright Copyright (c) 2009-2024 Volker Theile
+ * @copyright Copyright (c) 2009-2025 Volker Theile
  *
  * OpenMediaVault is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -51,7 +51,7 @@ export class WorkbenchFormPageComponent extends BaseFormPageComponent {
       {
         type: 'select',
         name: 'timeout',
-        label: gettext('Auto logout'),
+        label: gettext('Automatic logout'),
         hint: gettext('Close the session on inactivity after the specified time.'),
         value: 5,
         store: {

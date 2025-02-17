@@ -3,7 +3,7 @@
  *
  * @license   http://www.gnu.org/licenses/gpl.html GPL Version 3
  * @author    Volker Theile <volker.theile@openmediavault.org>
- * @copyright Copyright (c) 2009-2024 Volker Theile
+ * @copyright Copyright (c) 2009-2025 Volker Theile
  *
  * OpenMediaVault is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -35,11 +35,9 @@ import {
 import * as _ from 'lodash';
 import { combineLatest, Subscription } from 'rxjs';
 
-import { PageHintConfig } from '~/app/core/components/intuition/models/page-config.type';
-import { decodeURIComponentDeep, format, formatDeep, isFormatable } from '~/app/functions.helper';
+import { PageContext, PageHintConfig } from '~/app/core/components/intuition/models/page.type';
+import { decodeURIComponentDeep, formatDeep, isFormatable } from '~/app/functions.helper';
 import { AuthSessionService } from '~/app/shared/services/auth-session.service';
-
-export type PageContext = Record<string, any>;
 
 @Directive()
 // eslint-disable-next-line @angular-eslint/directive-class-suffix
@@ -140,28 +138,13 @@ export abstract class AbstractPageComponent<T> implements AfterViewInit, OnInit,
 
   /**
    * Format the given configuration properties using the page context.
-   *
-   * @param paths The paths of the properties to format.
+   * @param props The list of tokenized properties to format.
    */
-  protected formatConfig(paths: Array<string>): void {
-    _.forEach(paths, (path) => {
-      const value = _.get(this.config as Record<string, any>, path);
+  protected formatConfig(props: Array<string>): void {
+    _.forEach(props, (prop) => {
+      const value = _.get(this.config as Record<string, any>, prop);
       if (isFormatable(value)) {
-        _.set(this.config as Record<string, any>, path, formatDeep(value, this.pageContext));
-      }
-    });
-  }
-
-  /**
-   * Format the hint configuration using the page context.
-   *
-   * @protected
-   */
-  protected formatHintsConfig(): void {
-    const hints: PageHintConfig[] = _.get(this.config, 'hints', []) as PageHintConfig[];
-    _.forEach(hints, (hintConfig: PageHintConfig) => {
-      if (isFormatable(hintConfig.text)) {
-        hintConfig.text = format(hintConfig.text, this.pageContext);
+        _.set(this.config as Record<string, any>, prop, formatDeep(value, this.pageContext));
       }
     });
   }

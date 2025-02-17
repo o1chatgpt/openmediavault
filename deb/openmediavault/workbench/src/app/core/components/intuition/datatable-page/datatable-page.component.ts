@@ -3,7 +3,7 @@
  *
  * @license   http://www.gnu.org/licenses/gpl.html GPL Version 3
  * @author    Volker Theile <volker.theile@openmediavault.org>
- * @copyright Copyright (c) 2009-2024 Volker Theile
+ * @copyright Copyright (c) 2009-2025 Volker Theile
  *
  * OpenMediaVault is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -22,15 +22,13 @@ import * as _ from 'lodash';
 import { concat } from 'rxjs';
 import { finalize } from 'rxjs/operators';
 
-import {
-  AbstractPageComponent,
-  PageContext
-} from '~/app/core/components/intuition/abstract-page-component';
+import { AbstractPageComponent } from '~/app/core/components/intuition/abstract-page-component';
 import { FormDialogComponent } from '~/app/core/components/intuition/form-dialog/form-dialog.component';
 import { DatatablePageActionConfig } from '~/app/core/components/intuition/models/datatable-page-action-config.type';
 import { DatatablePageConfig } from '~/app/core/components/intuition/models/datatable-page-config.type';
 import { DatatablePageButtonConfig } from '~/app/core/components/intuition/models/datatable-page-config.type';
 import { FormFieldConfig } from '~/app/core/components/intuition/models/form-field-config.type';
+import { PageContext } from '~/app/core/components/intuition/models/page.type';
 import { format, formatDeep, isFormatable } from '~/app/functions.helper';
 import { translate } from '~/app/i18n.helper';
 import {
@@ -412,14 +410,13 @@ export class DatatablePageComponent extends AbstractPageComponent<DatatablePageC
   protected override onRouteParams() {
     // Format tokenized configuration properties.
     this.formatConfig([
-      'title',
-      'subTitle',
       'store.proxy.service',
       'store.proxy.get.method',
       'store.proxy.get.params',
+      'store.proxy.post.method',
+      'store.proxy.post.params',
       'store.filters'
     ]);
-    this.formatHintsConfig();
   }
 
   private sanitizeActionsConfig(actions: DatatablePageActionConfig[]) {

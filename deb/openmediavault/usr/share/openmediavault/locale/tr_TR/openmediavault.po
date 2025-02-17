@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the openmediavault package.
 # 
 # Translators:
-# Serhat SUT <serhat.sut@gmail.com>, 2012-2018,2020-2022
+# Serhat SUT <serhat.sut@gmail.com>, 2012-2018,2020-2022,2025
 msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-12 10:32+0100\n"
+"POT-Creation-Date: 2025-02-14 00:18+0100\n"
 "PO-Revision-Date: 2012-03-17 01:48+0000\n"
-"Last-Translator: Serhat SUT <serhat.sut@gmail.com>, 2012-2018,2020-2022\n"
+"Last-Translator: Serhat SUT <serhat.sut@gmail.com>, 2012-2018,2020-2022,2025\n"
 "Language-Team: Turkish (Turkey) (http://app.transifex.com/openmediavault/openmediavault/language/tr_TR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -228,16 +228,19 @@ msgstr "750 MiB"
 msgid "9 months"
 msgstr "9 ay"
 
+msgid "A (5 GHz)"
+msgstr ""
+
 msgid ""
 "A reboot is needed to fully apply the changes introduced by package "
 "installation or upgrade."
-msgstr ""
+msgstr "Paket kurulumu ya da yükseltme değişikliklerinin tam olarak uygulanabilmesi için yeniden başlatma gerekli."
 
 msgid "A running background task was detected."
-msgstr ""
+msgstr "Arka planda çalışan bir işlem bulundu."
 
 msgid "A scheduled task to create a snapshot has been created."
-msgstr ""
+msgstr "Anlık görüntünün oluşturulabilmesi için gerekli zamanlanmış görev."
 
 msgid "A secure shell (SSH) server."
 msgstr "Güvenli kabuk (SSH) sunucusu."
@@ -277,7 +280,7 @@ msgid "Active"
 msgstr "Aktif"
 
 msgid "Active or Idle"
-msgstr ""
+msgstr "Aktif ya da beklemede"
 
 msgid "Add"
 msgstr "Ekle"
@@ -325,13 +328,26 @@ msgid "All"
 msgstr "Tüm"
 
 msgid "All Snapshots"
-msgstr ""
+msgstr "Tüm anlık görüntüler"
 
 msgid "All packages will be upgraded. Do you want to proceed?"
 msgstr "Tüm paketler güncellenecektir. Devam etmek istiyor musunuz?"
 
 msgid ""
-"Allow clients to attempt to store OS/2 state extended attributes on a share."
+"Allow clients to attempt to access extended attributes on a share. The "
+"underlying filesystem exposed by the share must support extended attributes."
+msgstr ""
+
+msgid "Allow following symbolic links in the home directories."
+msgstr ""
+
+msgid "Allow following symbolic links in the share."
+msgstr ""
+
+msgid "Allow symbolic links to areas that are outside the home directories."
+msgstr ""
+
+msgid "Allow symbolic links to areas that are outside the share."
 msgstr ""
 
 msgid ""
@@ -421,7 +437,7 @@ msgid "At reboot"
 msgstr "Yeniden başlatma sırasında"
 
 msgid "Attach"
-msgstr ""
+msgstr "Ekle"
 
 msgid "Attributes"
 msgstr "Özellikler"
@@ -447,10 +463,10 @@ msgstr "Onaylama"
 msgid "Authentication required"
 msgstr "Onaylama gereklidir"
 
-msgid "Auto"
+msgid "Automatic"
 msgstr "Otomatik"
 
-msgid "Auto logout"
+msgid "Automatic logout"
 msgstr "Otomatik çıkış"
 
 msgid "Available"
@@ -459,11 +475,14 @@ msgstr "Mevcut"
 msgid "Azerbaijan"
 msgstr "Azerbaycan"
 
+msgid "B/G (2.4 GHz)"
+msgstr "B/G (2.4 GHz)"
+
 msgid "Back"
 msgstr "Geri"
 
 msgid "Background task"
-msgstr ""
+msgstr "Arka plan işlemi"
 
 msgid "Bad"
 msgstr "Kötü"
@@ -473,6 +492,9 @@ msgstr "Bahamalar"
 
 msgid "Bahrain"
 msgstr "Bahreyn"
+
+msgid "Band"
+msgstr "Bant"
 
 msgid "Bangladesh"
 msgstr "Bangladeş"
@@ -721,7 +743,7 @@ msgid "Connect even if the network is not broadcasting its SSID name."
 msgstr ""
 
 msgid "Connect to hidden network"
-msgstr ""
+msgstr "Gizli ağa bağlan"
 
 msgid "Connections"
 msgstr "Bağlantılar"
@@ -742,10 +764,7 @@ msgid "Copy"
 msgstr "Kopya"
 
 msgid "Copy permissions"
-msgstr ""
-
-msgid "Copy public SSH key"
-msgstr "Açık SSH anahtarını kopyala"
+msgstr "Kopyalama yetkileri"
 
 msgid "Copy to clipboard"
 msgstr "Panoya kopyala"
@@ -760,7 +779,7 @@ msgid "Create"
 msgstr "Yarat"
 
 msgid "Create and mount a file system."
-msgstr ""
+msgstr "Dosya sistemini oluştur ve bağla"
 
 msgid "Create file system"
 msgstr "Dosya sistemi yarat"
@@ -814,7 +833,7 @@ msgid "Created wireless network connection."
 msgstr "Kablosuz ağ bağlantısı yarat."
 
 msgid "Creation Time"
-msgstr ""
+msgstr "Oluşturulma Zamanı"
 
 msgid "Croatia"
 msgstr "Hırvatistan"
@@ -946,7 +965,7 @@ msgid "Disallow the user to modify their own account."
 msgstr ""
 
 msgid "Disk Temperatures"
-msgstr ""
+msgstr "Disk Sıcaklıkları"
 
 msgid "Disks"
 msgstr "Diskler"
@@ -976,7 +995,7 @@ msgid "Displays information about the services in a table."
 msgstr "Servislere ait bilgileri tablo düzeninde göster."
 
 msgid "Displays the S.M.A.R.T. status of all monitored disk devices."
-msgstr ""
+msgstr "İzlenen tüm disk cihazlarının S.M.A.R.T. durumunu gösterir."
 
 msgid "Displays the system time."
 msgstr "Sistem zamanını gösterir."
@@ -985,7 +1004,7 @@ msgid "Displays the system uptime."
 msgstr "Sistem çalışma süresini gösterir."
 
 msgid "Displays the temperature of all disk devices."
-msgstr ""
+msgstr "Tüm disk cihazlarının sıcaklıklarını gösterir."
 
 msgid "Displays various system information."
 msgstr "Çeşitli sistem bilgilerini gösterir."
@@ -997,7 +1016,7 @@ msgid "Do you really want to apply the configuration changes?"
 msgstr "Konfigurasyon değişikliklerini gerçekten uygulamak istiyor musunuz?"
 
 msgid "Do you really want to copy the permissions from the shared folder?"
-msgstr ""
+msgstr "Paylaşılan klasördeki tüm yetkileri kopyalamak istediğinize emin misiniz?"
 
 msgid ""
 "Do you really want to delete the selected item(s) <strong>{{ items | "
@@ -1104,7 +1123,7 @@ msgid "Empty now"
 msgstr "Şimdi boş"
 
 msgid "Enable NetBIOS"
-msgstr ""
+msgstr "NetBIOS u aktifleştir"
 
 msgid "Enable Time Machine support for this share."
 msgstr "Bu paylaşımda Time Machine desteğini aktive et."
@@ -1113,7 +1132,7 @@ msgid "Enable WINS server"
 msgstr "WINS sunucusu aç"
 
 msgid "Enable automatic snapshot clean up."
-msgstr ""
+msgstr "Otomatik anlık görüntü temizlemesini aktifleştir."
 
 msgid "Enable keyboard-interactive authentication."
 msgstr "Klavye etkileşimli doğrulamayı etkinleştir."
@@ -1281,6 +1300,9 @@ msgstr "Gömülü yazılım sürümü"
 
 msgid "Flags"
 msgstr "Flamalar"
+
+msgid "Follow symlinks"
+msgstr ""
 
 msgid "Force SSL/TLS"
 msgstr "SSL/TLS i zorunlu kıl"
@@ -1586,6 +1608,12 @@ msgstr "Kur"
 
 msgid "Install plugin"
 msgstr "Eklentileri kur"
+
+msgid "Install public key to remote machine"
+msgstr ""
+
+msgid "Install security updates unattended."
+msgstr ""
 
 msgid "Install updates"
 msgstr "Güncelleştirmeleri kur"
@@ -2337,6 +2365,9 @@ msgstr ""
 msgid "Please choose the method to wipe the device."
 msgstr "Cihazı silmek için bir metod seçiniz."
 
+msgid "Please note that values >= 128 do not permit the disk to spin down."
+msgstr ""
+
 msgid "Please wait ..."
 msgstr "Lütfen bekleyiniz..."
 
@@ -2954,6 +2985,9 @@ msgid "Slovenia"
 msgstr "Slovenya"
 
 msgid "Snapshots"
+msgstr ""
+
+msgid "Software"
 msgstr ""
 
 msgid "Software Failure.   Press left mouse button to continue."
@@ -3998,6 +4032,9 @@ msgstr "Batı Sahara"
 
 msgid "Wi-Fi"
 msgstr "Wi-Fi"
+
+msgid "Wide links"
+msgstr ""
 
 msgid "Wipe"
 msgstr "Sil"

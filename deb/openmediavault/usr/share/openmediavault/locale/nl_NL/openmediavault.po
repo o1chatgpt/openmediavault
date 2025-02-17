@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-12 10:32+0100\n"
+"POT-Creation-Date: 2025-02-14 00:18+0100\n"
 "PO-Revision-Date: 2012-03-17 01:48+0000\n"
 "Last-Translator: Tim <co_ti@hotmail.com>, 2013-2014,2016-2017,2022\n"
 "Language-Team: Dutch (Netherlands) (http://app.transifex.com/openmediavault/openmediavault/language/nl_NL/)\n"
@@ -234,6 +234,9 @@ msgstr ""
 msgid "9 months"
 msgstr "9 maanden"
 
+msgid "A (5 GHz)"
+msgstr ""
+
 msgid ""
 "A reboot is needed to fully apply the changes introduced by package "
 "installation or upgrade."
@@ -337,8 +340,21 @@ msgid "All packages will be upgraded. Do you want to proceed?"
 msgstr "Alle pakketten worden bijgewerkt. Wilt u doorgaan?"
 
 msgid ""
-"Allow clients to attempt to store OS/2 state extended attributes on a share."
-msgstr "Clients toestaan om OS/2 state extended attributes op een share op te slaan "
+"Allow clients to attempt to access extended attributes on a share. The "
+"underlying filesystem exposed by the share must support extended attributes."
+msgstr ""
+
+msgid "Allow following symbolic links in the home directories."
+msgstr ""
+
+msgid "Allow following symbolic links in the share."
+msgstr ""
+
+msgid "Allow symbolic links to areas that are outside the home directories."
+msgstr ""
+
+msgid "Allow symbolic links to areas that are outside the share."
+msgstr ""
 
 msgid ""
 "Allow this server to advertise itself as a time server to Windows clients."
@@ -453,17 +469,20 @@ msgstr "Authenticatie"
 msgid "Authentication required"
 msgstr "Authenticatie vereist"
 
-msgid "Auto"
-msgstr "Auto"
+msgid "Automatic"
+msgstr ""
 
-msgid "Auto logout"
-msgstr "Automatisch uitloggen"
+msgid "Automatic logout"
+msgstr ""
 
 msgid "Available"
 msgstr "Beschikbaar"
 
 msgid "Azerbaijan"
 msgstr "Azerbeidzjan"
+
+msgid "B/G (2.4 GHz)"
+msgstr ""
 
 msgid "Back"
 msgstr "Terug"
@@ -479,6 +498,9 @@ msgstr "Bahamas"
 
 msgid "Bahrain"
 msgstr "Bahrein"
+
+msgid "Band"
+msgstr ""
 
 msgid "Bangladesh"
 msgstr "Bangladesh"
@@ -749,9 +771,6 @@ msgstr "Kopieer"
 
 msgid "Copy permissions"
 msgstr ""
-
-msgid "Copy public SSH key"
-msgstr "Kopieer de openbare SSH-sleutel"
 
 msgid "Copy to clipboard"
 msgstr "Kopieer naar het klembord"
@@ -1288,6 +1307,9 @@ msgstr "Firmware versie"
 msgid "Flags"
 msgstr "Vlaggen"
 
+msgid "Follow symlinks"
+msgstr ""
+
 msgid "Force SSL/TLS"
 msgstr "Forceer SSL/TLS"
 
@@ -1591,6 +1613,12 @@ msgid "Install"
 msgstr "Installeren"
 
 msgid "Install plugin"
+msgstr ""
+
+msgid "Install public key to remote machine"
+msgstr ""
+
+msgid "Install security updates unattended."
 msgstr ""
 
 msgid "Install updates"
@@ -2343,6 +2371,9 @@ msgstr ""
 msgid "Please choose the method to wipe the device."
 msgstr ""
 
+msgid "Please note that values >= 128 do not permit the disk to spin down."
+msgstr ""
+
 msgid "Please wait ..."
 msgstr "Even geduld ..."
 
@@ -2960,6 +2991,9 @@ msgid "Slovenia"
 msgstr "Slovenië"
 
 msgid "Snapshots"
+msgstr ""
+
+msgid "Software"
 msgstr ""
 
 msgid "Software Failure.   Press left mouse button to continue."
@@ -4004,6 +4038,9 @@ msgstr "Westelijke Sahara"
 
 msgid "Wi-Fi"
 msgstr "Wifi"
+
+msgid "Wide links"
+msgstr ""
 
 msgid "Wipe"
 msgstr "Wissen"

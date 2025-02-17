@@ -4,7 +4,7 @@
 #
 # @license   http://www.gnu.org/licenses/gpl.html GPL Version 3
 # @author    Volker Theile <volker.theile@openmediavault.org>
-# @copyright Copyright (c) 2009-2024 Volker Theile
+# @copyright Copyright (c) 2009-2025 Volker Theile
 #
 # OpenMediaVault is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -568,6 +568,19 @@ case "$1" in
 			omv_module_set_dirty rsync
 			omv_module_set_dirty samba
 			omv_module_set_dirty smartmontools
+		fi
+		if dpkg --compare-versions "$2" lt-nl "7.4.17"; then
+			omv_module_set_dirty samba
+		fi
+		if dpkg --compare-versions "$2" lt-nl "7.5.0"; then
+			omv_module_set_dirty systemd-networkd
+		fi
+		if dpkg --compare-versions "$2" lt-nl "7.6.0"; then
+			omv_module_set_dirty apt
+			rm -rf /etc/apt/apt.conf.d/98openmediavault-unattended-upgrades-mail
+		fi
+		if dpkg --compare-versions "$2" lt-nl "7.7.0"; then
+			omv_module_set_dirty apt
 		fi
 
 		########################################################################

@@ -3,14 +3,14 @@
 # This file is distributed under the same license as the openmediavault package.
 # 
 # Translators:
-# Kostas Moho, 2012-2024
+# Kostas Moho, 2012-2025
 msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-12 10:32+0100\n"
+"POT-Creation-Date: 2025-02-14 00:18+0100\n"
 "PO-Revision-Date: 2012-03-17 01:48+0000\n"
-"Last-Translator: Kostas Moho, 2012-2024\n"
+"Last-Translator: Kostas Moho, 2012-2025\n"
 "Language-Team: Greek (Greece) (http://app.transifex.com/openmediavault/openmediavault/language/el_GR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -228,6 +228,9 @@ msgstr "750 MiB"
 msgid "9 months"
 msgstr "9 μήνες"
 
+msgid "A (5 GHz)"
+msgstr "A (5 GHz)"
+
 msgid ""
 "A reboot is needed to fully apply the changes introduced by package "
 "installation or upgrade."
@@ -331,8 +334,21 @@ msgid "All packages will be upgraded. Do you want to proceed?"
 msgstr "Θα αναβαθμιστούν όλα τα πακέτα. Συνέχεια;"
 
 msgid ""
-"Allow clients to attempt to store OS/2 state extended attributes on a share."
-msgstr "Να επιτρέπεται στους πελάτες να αποθηκεύουν εκτεταμένες ιδιότητες OS/2 στα κοινόχρηστα."
+"Allow clients to attempt to access extended attributes on a share. The "
+"underlying filesystem exposed by the share must support extended attributes."
+msgstr "Να επιτρέπεται στους πελάτες η απόπειρα προσπέλασης των εκτεταμένων ιδιοτήτων σε κάποιο μερίδιο. Το υποβόσκον σύστημα αρχείων που παρουσιάζεται μέσω του μεριδίου πρέπει να υποστηρίζει εκτεταμένες ιδιότητες."
+
+msgid "Allow following symbolic links in the home directories."
+msgstr "Να ακολουθούνται οι συμβολικοί σύνδεσμοι στους οικείους φακέλους."
+
+msgid "Allow following symbolic links in the share."
+msgstr "Να ακολουθούνται οι συμβολικοί σύνδεσμοι στο μερίδιο."
+
+msgid "Allow symbolic links to areas that are outside the home directories."
+msgstr "Να επιτρέπονται οι συμβολικοί σύνδεσμοι σε περιοχές εκτός των οικείων φακέλων."
+
+msgid "Allow symbolic links to areas that are outside the share."
+msgstr "Να επιτρέπονται οι συμβολικοί σύνδεσμοι σε περιοχές εκτός της κοινής χρήσης."
 
 msgid ""
 "Allow this server to advertise itself as a time server to Windows clients."
@@ -447,10 +463,10 @@ msgstr "Πιστοποίηση"
 msgid "Authentication required"
 msgstr "Απαιτείται πιστοποίηση"
 
-msgid "Auto"
-msgstr "Αυτόματο"
+msgid "Automatic"
+msgstr "Αυτόματα"
 
-msgid "Auto logout"
+msgid "Automatic logout"
 msgstr "Αυτόματη αποσύνδεση"
 
 msgid "Available"
@@ -458,6 +474,9 @@ msgstr "Διαθέσιμο"
 
 msgid "Azerbaijan"
 msgstr "Azerbaijan"
+
+msgid "B/G (2.4 GHz)"
+msgstr "B/G (2.4 GHz)"
 
 msgid "Back"
 msgstr "Πίσω"
@@ -473,6 +492,9 @@ msgstr "Bahamas"
 
 msgid "Bahrain"
 msgstr "Bahrain"
+
+msgid "Band"
+msgstr "Μπάντα"
 
 msgid "Bangladesh"
 msgstr "Bangladesh"
@@ -743,9 +765,6 @@ msgstr "Αντιγραφή"
 
 msgid "Copy permissions"
 msgstr "Αντιγραφή δικαιωμάτων"
-
-msgid "Copy public SSH key"
-msgstr "Αντιγραφή δημόσιου κλειδιού SSH"
 
 msgid "Copy to clipboard"
 msgstr "Αντιγραφή στο πρόχειρο"
@@ -1282,6 +1301,9 @@ msgstr "Έκδοση λογισμικού"
 msgid "Flags"
 msgstr "Σημάνσεις"
 
+msgid "Follow symlinks"
+msgstr "Ακολούθηση συμβολικών συνδέσμων"
+
 msgid "Force SSL/TLS"
 msgstr "Επιβολή SSL/TLS"
 
@@ -1586,6 +1608,12 @@ msgstr "Εγκατάσταση"
 
 msgid "Install plugin"
 msgstr "Εγκατάσταση πρόσθετου"
+
+msgid "Install public key to remote machine"
+msgstr "Εγκατάσταση δημόσιου κλειδιού για το απομακρυσμένο μηχάνημα"
+
+msgid "Install security updates unattended."
+msgstr "Εγκατάσταση ενημερώσεων ασφαλείας χωρίς εποπτεία."
 
 msgid "Install updates"
 msgstr "Εγκατάσταση ενημερώσεων"
@@ -2337,6 +2365,9 @@ msgstr "Διαβάστε το <a href='https://manpages.debian.org/nfs-kernel-se
 msgid "Please choose the method to wipe the device."
 msgstr "Επιλογή μεθόδου εκκένωσης της συσκευής."
 
+msgid "Please note that values >= 128 do not permit the disk to spin down."
+msgstr "Υπόψιν πως με τιμές >=128 δεν θα επιτρέπεται στον δίσκο να σταματήσει."
+
 msgid "Please wait ..."
 msgstr "Παρακαλώ περιμένετε ..."
 
@@ -2955,6 +2986,9 @@ msgstr "Slovenia"
 
 msgid "Snapshots"
 msgstr "Στιγμιότυπα"
+
+msgid "Software"
+msgstr "Λογισμικό"
 
 msgid "Software Failure.   Press left mouse button to continue."
 msgstr "Σφάλμα Λογισμικού   Αριστερό κλικ για συνέχεια."
@@ -3998,6 +4032,9 @@ msgstr "Western Sahara"
 
 msgid "Wi-Fi"
 msgstr "Wi-Fi"
+
+msgid "Wide links"
+msgstr "Ευρεία συνδεσιμότητα"
 
 msgid "Wipe"
 msgstr "Εκκένωση (διαγραφή)"

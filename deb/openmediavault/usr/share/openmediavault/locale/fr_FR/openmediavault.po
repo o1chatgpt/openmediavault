@@ -23,7 +23,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-12 10:32+0100\n"
+"POT-Creation-Date: 2025-02-14 00:18+0100\n"
 "PO-Revision-Date: 2012-03-17 01:48+0000\n"
 "Last-Translator: M@T D., 2022-2024\n"
 "Language-Team: French (France) (http://app.transifex.com/openmediavault/openmediavault/language/fr_FR/)\n"
@@ -243,6 +243,9 @@ msgstr "750 Mo"
 msgid "9 months"
 msgstr "9 mois"
 
+msgid "A (5 GHz)"
+msgstr ""
+
 msgid ""
 "A reboot is needed to fully apply the changes introduced by package "
 "installation or upgrade."
@@ -346,8 +349,21 @@ msgid "All packages will be upgraded. Do you want to proceed?"
 msgstr "Tous les paquets seront mis à jour. Voulez-vous continuer ?"
 
 msgid ""
-"Allow clients to attempt to store OS/2 state extended attributes on a share."
-msgstr "Permettre aux clients d'essayer de stocker des attributs d'état OS/2 étendus dans un dossier partagé."
+"Allow clients to attempt to access extended attributes on a share. The "
+"underlying filesystem exposed by the share must support extended attributes."
+msgstr ""
+
+msgid "Allow following symbolic links in the home directories."
+msgstr ""
+
+msgid "Allow following symbolic links in the share."
+msgstr ""
+
+msgid "Allow symbolic links to areas that are outside the home directories."
+msgstr ""
+
+msgid "Allow symbolic links to areas that are outside the share."
+msgstr ""
 
 msgid ""
 "Allow this server to advertise itself as a time server to Windows clients."
@@ -462,17 +478,20 @@ msgstr "Authentification"
 msgid "Authentication required"
 msgstr "Authentification requise"
 
-msgid "Auto"
-msgstr "Auto"
+msgid "Automatic"
+msgstr ""
 
-msgid "Auto logout"
-msgstr "Déconnexion automatique"
+msgid "Automatic logout"
+msgstr ""
 
 msgid "Available"
 msgstr "Disponible"
 
 msgid "Azerbaijan"
 msgstr "Azerbaijan"
+
+msgid "B/G (2.4 GHz)"
+msgstr ""
 
 msgid "Back"
 msgstr "Retour"
@@ -488,6 +507,9 @@ msgstr "Bahamas"
 
 msgid "Bahrain"
 msgstr "Bahrain"
+
+msgid "Band"
+msgstr ""
 
 msgid "Bangladesh"
 msgstr "Bangladesh"
@@ -758,9 +780,6 @@ msgstr "Copie"
 
 msgid "Copy permissions"
 msgstr "Autorisations de copie"
-
-msgid "Copy public SSH key"
-msgstr "Copier la clé publique SSH"
 
 msgid "Copy to clipboard"
 msgstr "Copier vers le presse-papier"
@@ -1297,6 +1316,9 @@ msgstr "Version du firmware"
 msgid "Flags"
 msgstr "Drapeaux"
 
+msgid "Follow symlinks"
+msgstr ""
+
 msgid "Force SSL/TLS"
 msgstr "Forcer SSL/TLS"
 
@@ -1601,6 +1623,12 @@ msgstr "Installer"
 
 msgid "Install plugin"
 msgstr "Installer l'extension"
+
+msgid "Install public key to remote machine"
+msgstr ""
+
+msgid "Install security updates unattended."
+msgstr ""
 
 msgid "Install updates"
 msgstr "Installer les mises à jour"
@@ -2352,6 +2380,9 @@ msgstr "Veuillez vous référer aux <a href='https://manpages.debian.org/nfs-ker
 msgid "Please choose the method to wipe the device."
 msgstr "Veuillez choisir la méthode pour effacer le périphérique."
 
+msgid "Please note that values >= 128 do not permit the disk to spin down."
+msgstr ""
+
 msgid "Please wait ..."
 msgstr "Veuillez patienter SVP ..."
 
@@ -2970,6 +3001,9 @@ msgstr "Slovénie"
 
 msgid "Snapshots"
 msgstr "Instantanés"
+
+msgid "Software"
+msgstr ""
 
 msgid "Software Failure.   Press left mouse button to continue."
 msgstr "Erreur logicielle.   Cliquez sur le bouton gauche de la souris pour continuer."
@@ -4013,6 +4047,9 @@ msgstr "Sahara occidental"
 
 msgid "Wi-Fi"
 msgstr "Wi-Fi"
+
+msgid "Wide links"
+msgstr ""
 
 msgid "Wipe"
 msgstr "Effacer"

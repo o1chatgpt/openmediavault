@@ -3,7 +3,7 @@
  *
  * @license   http://www.gnu.org/licenses/gpl.html GPL Version 3
  * @author    Volker Theile <volker.theile@openmediavault.org>
- * @copyright Copyright (c) 2009-2024 Volker Theile
+ * @copyright Copyright (c) 2009-2025 Volker Theile
  *
  * OpenMediaVault is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -38,6 +38,7 @@ import {
   FormFieldConstraintValidator,
   FormFieldModifier
 } from '~/app/core/components/intuition/models/form-field-config.type';
+import { PageContext } from '~/app/core/components/intuition/models/page.type';
 import { Unsubscribe } from '~/app/decorators';
 import { format, formatDeep } from '~/app/functions.helper';
 import { CustomValidators } from '~/app/shared/forms/custom-validators';
@@ -58,7 +59,7 @@ export class FormComponent implements AfterViewInit, OnInit {
   config: FormFieldConfig[];
 
   @Input()
-  context = {};
+  pageContext: PageContext = {};
 
   @Unsubscribe()
   private subscriptions: Subscription = new Subscription();
@@ -272,7 +273,7 @@ export class FormComponent implements AfterViewInit, OnInit {
             validators.push(
               CustomValidators.constraint(
                 custom.constraint,
-                this.context,
+                this.pageContext,
                 custom.errorCode,
                 custom.errorData
               )
@@ -285,8 +286,8 @@ export class FormComponent implements AfterViewInit, OnInit {
       }
       let value = _.defaultTo(field.value, null);
       if (_.isString(value)) {
-        // Evaluate filters.
-        value = format(value, {});
+        // Evaluate filters and apply page context.
+        value = format(value, this.pageContext);
       }
       // Create the form control.
       controlsConfig[field.name] = new FormControl(
@@ -354,7 +355,7 @@ export class FormComponent implements AfterViewInit, OnInit {
     // those of disabled form fields as well. `values` is outdated at
     // that moment because the event we are handling has not bubbled up
     // to the form yet.
-    const values = _.merge({}, this.context, this.formGroup.getRawValue());
+    const values = _.merge({}, this.pageContext, this.formGroup.getRawValue());
     // If there is a constraint specified, then test it, otherwise assume
     // the condition of the modifier is fulfilled. This is the case when
     // the `deps` property is specified.

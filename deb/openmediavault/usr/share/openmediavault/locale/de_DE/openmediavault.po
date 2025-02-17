@@ -11,7 +11,7 @@
 # Pascal Tippelt <pascal.tippelt@go-eight.de>, 2021
 # Stephan Steiner, 2014
 # Thomas Melka, 2022
-# Volker Theile <votdev@gmx.de>, 2021-2024
+# Volker Theile <votdev@gmx.de>, 2021-2025
 # Volker Theile <votdev@gmx.de>, 2013-2021
 # Volker Theile <votdev@gmx.de>, 2012
 # Volker Theile <votdev@gmx.de>, 2012
@@ -21,9 +21,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-12 10:32+0100\n"
+"POT-Creation-Date: 2025-02-14 00:18+0100\n"
 "PO-Revision-Date: 2012-03-17 01:48+0000\n"
-"Last-Translator: Volker Theile <votdev@gmx.de>, 2021-2024\n"
+"Last-Translator: Volker Theile <votdev@gmx.de>, 2021-2025\n"
 "Language-Team: German (http://app.transifex.com/openmediavault/openmediavault/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -241,6 +241,9 @@ msgstr "750 MiB"
 msgid "9 months"
 msgstr "9 Monate"
 
+msgid "A (5 GHz)"
+msgstr "A (5 GHz)"
+
 msgid ""
 "A reboot is needed to fully apply the changes introduced by package "
 "installation or upgrade."
@@ -344,8 +347,21 @@ msgid "All packages will be upgraded. Do you want to proceed?"
 msgstr "Alle Pakete werden aktualisiert. Möchten Sie fortfahren?"
 
 msgid ""
-"Allow clients to attempt to store OS/2 state extended attributes on a share."
-msgstr "Erlaube den Clients, erweitere OS/2 Datei-Attribute bei einer Freigabe zu speichern."
+"Allow clients to attempt to access extended attributes on a share. The "
+"underlying filesystem exposed by the share must support extended attributes."
+msgstr "Erlaube Clients, auf erweiterte Attribute einer Freigabe zuzugreifen. Das zugrunde liegende Dateisystem, das von der Freigabe bereitgestellt wird, muss erweiterte Attribute unterstützen."
+
+msgid "Allow following symbolic links in the home directories."
+msgstr "Erlaube das folgen von symbolischen Links in den Home-Verzeichnissen."
+
+msgid "Allow following symbolic links in the share."
+msgstr "Erlaube das folgen von symbolischen Links in der Freigabe."
+
+msgid "Allow symbolic links to areas that are outside the home directories."
+msgstr "Erlaube symbolische Links zu Bereichen, die außerhalb der Heimatverzeichnisse liegen."
+
+msgid "Allow symbolic links to areas that are outside the share."
+msgstr "Erlaube symbolische Links zu Bereichen, die außerhalb der Freigabe liegen."
 
 msgid ""
 "Allow this server to advertise itself as a time server to Windows clients."
@@ -460,10 +476,10 @@ msgstr "Authentifizierung"
 msgid "Authentication required"
 msgstr "Authentifizierung erforderlich"
 
-msgid "Auto"
-msgstr "Auto"
+msgid "Automatic"
+msgstr "Automatisch"
 
-msgid "Auto logout"
+msgid "Automatic logout"
 msgstr "Automatische Abmeldung"
 
 msgid "Available"
@@ -471,6 +487,9 @@ msgstr "Verfügbar"
 
 msgid "Azerbaijan"
 msgstr "Aserbaidschan"
+
+msgid "B/G (2.4 GHz)"
+msgstr "B/G (2.4 GHz)"
 
 msgid "Back"
 msgstr "Zurück"
@@ -486,6 +505,9 @@ msgstr "Bahamas"
 
 msgid "Bahrain"
 msgstr "Bahrain"
+
+msgid "Band"
+msgstr "Band"
 
 msgid "Bangladesh"
 msgstr "Bangladesch"
@@ -756,9 +778,6 @@ msgstr "Kopieren"
 
 msgid "Copy permissions"
 msgstr "Berechtigungen kopieren"
-
-msgid "Copy public SSH key"
-msgstr "Kopiere öffentlichen SSH Schlüssel"
 
 msgid "Copy to clipboard"
 msgstr "In die Zwischenablage kopieren"
@@ -1295,6 +1314,9 @@ msgstr "Firmware Version"
 msgid "Flags"
 msgstr "Flags"
 
+msgid "Follow symlinks"
+msgstr "Symlinks folgen"
+
 msgid "Force SSL/TLS"
 msgstr "Erzwinge SSL/TLS"
 
@@ -1599,6 +1621,12 @@ msgstr "Installieren"
 
 msgid "Install plugin"
 msgstr "Erweiterung installieren"
+
+msgid "Install public key to remote machine"
+msgstr "Installiere öffentlichen Schlüssel auf entferntem Rechner"
+
+msgid "Install security updates unattended."
+msgstr "Installiere Sicherheitsupdates unbeaufsichtigt."
 
 msgid "Install updates"
 msgstr "Aktualisierungen installieren"
@@ -2350,6 +2378,9 @@ msgstr "Weitere Einzelheiten entnehmen Sie bitte der <a href='https://manpages.d
 msgid "Please choose the method to wipe the device."
 msgstr "Bitte wählen Sie die Methode zum Löschen des Geräts."
 
+msgid "Please note that values >= 128 do not permit the disk to spin down."
+msgstr "Bitte beachten Sie, dass Werte >= 128 kein Herunterfahren der Festplatte zulassen."
+
 msgid "Please wait ..."
 msgstr "Bitte warten ..."
 
@@ -2968,6 +2999,9 @@ msgstr "Slowenien"
 
 msgid "Snapshots"
 msgstr "Schnappschüsse"
+
+msgid "Software"
+msgstr "Software"
 
 msgid "Software Failure.   Press left mouse button to continue."
 msgstr "Software Failure.   Press left mouse button to continue."
@@ -4011,6 +4045,9 @@ msgstr "Westsahara"
 
 msgid "Wi-Fi"
 msgstr "Funknetzwerk"
+
+msgid "Wide links"
+msgstr "Weite Links"
 
 msgid "Wipe"
 msgstr "Löschen"

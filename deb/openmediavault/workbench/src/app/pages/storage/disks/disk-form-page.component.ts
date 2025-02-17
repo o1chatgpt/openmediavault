@@ -3,7 +3,7 @@
  *
  * @license   http://www.gnu.org/licenses/gpl.html GPL Version 3
  * @author    Volker Theile <volker.theile@openmediavault.org>
- * @copyright Copyright (c) 2009-2024 Volker Theile
+ * @copyright Copyright (c) 2009-2025 Volker Theile
  *
  * OpenMediaVault is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -63,6 +63,7 @@ export class DiskFormPageComponent extends BaseFormPageComponent {
         type: 'select',
         name: 'apm',
         label: gettext('Advanced Power Management'),
+        hint: gettext('Please note that values >= 128 do not permit the disk to spin down.'),
         value: 0,
         store: {
           data: [

@@ -13,6 +13,12 @@
 				<proposed>0</proposed>
 				<partner>0</partner>
 			</distribution>
+			<updates>
+				<!--
+				<unattendedupgrade>0|1</unattendedupgrade>
+				-->
+				<unattendedupgrade>1</unattendedupgrade>
+			</updates>
 		</apt>
 		<powermanagement>
 			<!--
@@ -165,6 +171,7 @@
 					<vlanid>1-4095</vlanid>
 					<vlanrawdevice>xxx</vlanrawdevice>
 					# - wifi
+					<band>auto|2.4GHz|5GHz</band>
 					<wpassid>xxx</wpassid>
 					<wpapsk>xxx</wpapsk>
 					<keymanagement>psk|sae</keymanagement>
@@ -460,6 +467,8 @@
 			<homesrecyclebin>0</homesrecyclebin>
 			<homesinheritacls>0</homesinheritacls>
 			<homesinheritpermissions>0</homesinheritpermissions>
+			<homesfollowsymlinks>0|1</homesfollowsymlinks>
+			<homeswidelinks>0|1</homeswidelinks>
 			<homesextraoptions></homesextraoptions>
 			<netbios>0</netbios>
 			<minprotocol>SMB2</minprotocol>
@@ -486,6 +495,8 @@
 					<hostsdeny></hostsdeny>
 					<audit>0|1</audit>
 					<transportencryption>0|1</transportencryption>
+					<followsymlinks>0|1</followsymlinks>
+					<widelinks>0|1</widelinks>
 					<extraoptions></extraoptions>
 				</share>
 				-->

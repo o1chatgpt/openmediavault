@@ -3,7 +3,7 @@
  *
  * @license   http://www.gnu.org/licenses/gpl.html GPL Version 3
  * @author    Volker Theile <volker.theile@openmediavault.org>
- * @copyright Copyright (c) 2009-2024 Volker Theile
+ * @copyright Copyright (c) 2009-2025 Volker Theile
  *
  * OpenMediaVault is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -20,6 +20,11 @@ import { marker as gettext } from '@ngneat/transloco-keys-manager/marker';
 import * as _ from 'lodash';
 
 import { AbstractFormFieldComponent } from '~/app/core/components/intuition/form/components/abstract-form-field-component';
+import {
+  flattenFormFieldConfig,
+  formatFormFieldConfig
+} from '~/app/core/components/intuition/functions.helper';
+import { MatFormDatatableAction } from '~/app/core/components/intuition/material/mat-form-datatable/mat-form-datatable.component';
 import { Icon } from '~/app/shared/enum/icon.enum';
 
 @Component({
@@ -72,6 +77,16 @@ export class FormDatatableComponent extends AbstractFormFieldComponent {
             type: 'iconButton'
           });
           break;
+      }
+    });
+  }
+
+  protected override formatConfig(): void {
+    super.formatConfig();
+    _.forEach(this.config.actions, (action: MatFormDatatableAction) => {
+      if (action.formDialogConfig?.fields) {
+        const allFields = flattenFormFieldConfig(action.formDialogConfig.fields);
+        formatFormFieldConfig(allFields, this.pageContext, ['store.proxy', 'store.filters']);
       }
     });
   }

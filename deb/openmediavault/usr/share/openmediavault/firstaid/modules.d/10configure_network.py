@@ -4,7 +4,7 @@
 #
 # @license   http://www.gnu.org/licenses/gpl.html GPL Version 3
 # @author    Volker Theile <volker.theile@openmediavault.org>
-# @copyright Copyright (c) 2009-2024 Volker Theile
+# @copyright Copyright (c) 2009-2025 Volker Theile
 #
 # OpenMediaVault is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -404,6 +404,24 @@ class Module(openmediavault.firstaid.IModule):
                         width=32,
                     )
             rpc_params["wpassid"] = wpa_ssid
+            # Get the frequency band.
+            choices = [
+                ["auto", "Automatic"],
+                ["2.4GHz", "B/G (2.4 GHz)"],
+                ["5GHz", "A (5 GHz)"],
+            ]
+            (code, tag) = d.menu(
+                "Please select the frequency band.",
+                backtitle=self.description,
+                clear=True,
+                height=11,
+                width=65,
+                menu_height=8,
+                choices=choices,
+            )
+            if code in (d.CANCEL, d.ESC):
+                return 0
+            rpc_params["band"] = tag
             # Get the key management mode.
             choices = [
                 ["psk", "WPA2-Personal"],

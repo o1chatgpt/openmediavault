@@ -3,7 +3,7 @@
  *
  * @license   http://www.gnu.org/licenses/gpl.html GPL Version 3
  * @author    Volker Theile <volker.theile@openmediavault.org>
- * @copyright Copyright (c) 2009-2024 Volker Theile
+ * @copyright Copyright (c) 2009-2025 Volker Theile
  *
  * OpenMediaVault is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -250,12 +250,40 @@ export class SmbShareFormPageComponent extends BaseFormPageComponent {
       },
       {
         type: 'checkbox',
+        name: 'followsymlinks',
+        label: gettext('Follow symlinks'),
+        hint: gettext('Allow following symbolic links in the share.'),
+        value: true,
+        modifiers: [
+          {
+            type: 'checked',
+            opposite: false,
+            constraint: { operator: 'truthy', arg0: { prop: 'widelinks' } }
+          }
+        ]
+      },
+      {
+        type: 'checkbox',
+        name: 'widelinks',
+        label: gettext('Wide links'),
+        hint: gettext('Allow symbolic links to areas that are outside the share.'),
+        value: false,
+        modifiers: [
+          {
+            type: 'unchecked',
+            opposite: false,
+            constraint: { operator: 'falsy', arg0: { prop: 'followsymlinks' } }
+          }
+        ]
+      },
+      {
+        type: 'checkbox',
         name: 'easupport',
         label: gettext('Extended attributes'),
         hint: gettext(
-          'Allow clients to attempt to store OS/2 state extended attributes on a share.'
+          'Allow clients to attempt to access extended attributes on a share. The underlying filesystem exposed by the share must support extended attributes.'
         ),
-        value: false
+        value: true
       },
       {
         type: 'checkbox',

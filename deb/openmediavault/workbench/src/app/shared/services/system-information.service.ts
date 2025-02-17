@@ -3,7 +3,7 @@
  *
  * @license   http://www.gnu.org/licenses/gpl.html GPL Version 3
  * @author    Volker Theile <volker.theile@openmediavault.org>
- * @copyright Copyright (c) 2009-2024 Volker Theile
+ * @copyright Copyright (c) 2009-2025 Volker Theile
  *
  * OpenMediaVault is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -57,6 +57,14 @@ export class SystemInformationService implements OnDestroy {
     private rpcService: RpcService
   ) {
     this.systemInfo$ = this.systemInfoSource.asObservable();
+    this.start();
+  }
+
+  ngOnDestroy(): void {
+    this.stop();
+  }
+
+  public start(): void {
     // Poll the system system-information every 5 seconds. Continue, even
     // if there is a connection problem AND do not display an error
     // notification.
@@ -80,6 +88,9 @@ export class SystemInformationService implements OnDestroy {
       )
       .subscribe({
         next: (res: SystemInformation) => {
+          if (!_.isPlainObject(res)) {
+            return;
+          }
           // We need to convert some properties to numbers because
           // they are strings due to the 32bit compatibility of the
           // PHP backend.
@@ -100,7 +111,7 @@ export class SystemInformationService implements OnDestroy {
       });
   }
 
-  ngOnDestroy(): void {
+  public stop(): void {
     this.subscription.unsubscribe();
   }
 }

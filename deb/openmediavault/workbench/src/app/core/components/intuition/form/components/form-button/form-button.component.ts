@@ -3,7 +3,7 @@
  *
  * @license   http://www.gnu.org/licenses/gpl.html GPL Version 3
  * @author    Volker Theile <volker.theile@openmediavault.org>
- * @copyright Copyright (c) 2009-2024 Volker Theile
+ * @copyright Copyright (c) 2009-2025 Volker Theile
  *
  * OpenMediaVault is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -54,15 +54,16 @@ export class FormButtonComponent extends AbstractFormFieldComponent {
       this.config.click();
     } else if (_.isString(this.config.url)) {
       // Navigate to the specified URL.
-      const url = format(this.config.url, formValues);
+      const url = format(this.config.url, _.merge({}, formValues, this.pageContext));
       this.router.navigateByUrl(url);
     } else if (_.isPlainObject(this.config.request)) {
       // Execute the specified request.
       const control: AbstractControl = this.formGroup.get(this.config.name);
       const request = this.config.request;
-      const params = formatDeep(request.params, formValues);
+      const params = formatDeep(request.params, _.merge({}, formValues, this.pageContext));
       if (_.isString(request.progressMessage)) {
-        this.blockUiService.start(translate(request.progressMessage));
+        const message = format(translate(request.progressMessage), this.pageContext);
+        this.blockUiService.start(message);
       }
       control.disable();
       this.rpcService[request.task ? 'requestTask' : 'request'](
@@ -79,7 +80,7 @@ export class FormButtonComponent extends AbstractFormFieldComponent {
           })
         )
         .subscribe((res: any) => {
-          const data: Record<any, any> = _.merge({ _response: res }, formValues);
+          const data: Record<any, any> = _.merge({ _response: res }, formValues, this.pageContext);
           // Display a notification?
           if (_.isString(request.successNotification)) {
             const successNotification: string = format(request.successNotification, data);

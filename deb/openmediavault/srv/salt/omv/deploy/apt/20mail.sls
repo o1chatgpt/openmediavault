@@ -2,7 +2,7 @@
 #
 # @license   http://www.gnu.org/licenses/gpl.html GPL Version 3
 # @author    Volker Theile <volker.theile@openmediavault.org>
-# @copyright Copyright (c) 2009-2024 Volker Theile
+# @copyright Copyright (c) 2009-2025 Volker Theile
 #
 # OpenMediaVault is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -30,9 +30,9 @@ create_apt_listchanges_mail:
         [apt]
         email_address=root
 
-create_apt_unattended_upgrades_mail:
+create_apt_unattended_upgrade_mail:
   file.managed:
-    - name: "/etc/apt/apt.conf.d/98openmediavault-unattended-upgrades-mail"
+    - name: "/etc/apt/apt.conf.d/98openmediavault-unattended-upgrade-mail"
     - contents: |
         Unattended-Upgrade::Mail "root";
 
@@ -42,8 +42,8 @@ remove_apt_listchanges_mail:
   file.absent:
     - name: "/etc/apt/listchanges.conf.d/98openmediavault-mail.conf"
 
-remove_apt_unattended_upgrades_mail:
+remove_apt_unattended_upgrade_mail:
   file.absent:
-    - name: "/etc/apt/apt.conf.d/98openmediavault-unattended-upgrades-mail"
+    - name: "/etc/apt/apt.conf.d/98openmediavault-unattended-upgrade-mail"
 
 {% endif %}

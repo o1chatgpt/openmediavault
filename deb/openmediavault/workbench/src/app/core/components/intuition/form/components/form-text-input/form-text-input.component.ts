@@ -3,7 +3,7 @@
  *
  * @license   http://www.gnu.org/licenses/gpl.html GPL Version 3
  * @author    Volker Theile <volker.theile@openmediavault.org>
- * @copyright Copyright (c) 2009-2024 Volker Theile
+ * @copyright Copyright (c) 2009-2025 Volker Theile
  *
  * OpenMediaVault is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -23,6 +23,7 @@ import { Observable, throwError } from 'rxjs';
 import { catchError, map, skipWhile, startWith } from 'rxjs/operators';
 
 import { AbstractFormFieldComponent } from '~/app/core/components/intuition/form/components/abstract-form-field-component';
+import { formatFormFieldConfig } from '~/app/core/components/intuition/functions.helper';
 import { ClipboardService } from '~/app/shared/services/clipboard.service';
 import { DataStoreService } from '~/app/shared/services/data-store.service';
 
@@ -64,6 +65,11 @@ export class FormTextInputComponent extends AbstractFormFieldComponent implement
 
   onCopyToClipboard(): void {
     this.clipboardService.copy(this.abstractControl.value);
+  }
+
+  protected override formatConfig(): void {
+    super.formatConfig();
+    formatFormFieldConfig([this.config], this.pageContext, ['store.proxy', 'store.filters']);
   }
 
   private doLoadStore(): void {

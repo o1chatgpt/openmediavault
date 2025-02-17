@@ -3,7 +3,7 @@
  *
  * @license   http://www.gnu.org/licenses/gpl.html GPL Version 3
  * @author    Volker Theile <volker.theile@openmediavault.org>
- * @copyright Copyright (c) 2009-2024 Volker Theile
+ * @copyright Copyright (c) 2009-2025 Volker Theile
  *
  * OpenMediaVault is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -92,6 +92,22 @@ export class InterfaceWifiFormPageComponent extends BaseFormPageComponent {
         name: 'wpassid',
         label: gettext('SSID'),
         value: '',
+        validators: {
+          required: true
+        }
+      },
+      {
+        type: 'select',
+        name: 'band',
+        label: gettext('Band'),
+        value: 'auto',
+        store: {
+          data: [
+            ['auto', gettext('Automatic')],
+            ['2.4GHz', gettext('B/G (2.4 GHz)')],
+            ['5GHz', gettext('A (5 GHz)')]
+          ]
+        },
         validators: {
           required: true
         }
@@ -237,7 +253,7 @@ export class InterfaceWifiFormPageComponent extends BaseFormPageComponent {
           data: [
             ['manual', gettext('Disabled')],
             ['dhcp', gettext('DHCP')],
-            ['auto', gettext('Auto')],
+            ['auto', gettext('Automatic')],
             ['static', gettext('Static')]
           ]
         },

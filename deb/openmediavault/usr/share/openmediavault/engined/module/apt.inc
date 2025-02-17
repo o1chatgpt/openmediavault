@@ -4,7 +4,7 @@
  *
  * @license   http://www.gnu.org/licenses/gpl.html GPL Version 3
  * @author    Volker Theile <volker.theile@openmediavault.org>
- * @copyright Copyright (c) 2009-2024 Volker Theile
+ * @copyright Copyright (c) 2009-2025 Volker Theile
  *
  * OpenMediaVault is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -45,6 +45,10 @@ class Apt extends \OMV\Engine\Module\ServiceAbstract
 		$dispatcher->addListener(
 			OMV_NOTIFY_MODIFY,
 			"org.openmediavault.conf.system.apt.distribution",
+			[$this, "setDirty"]);
+		$dispatcher->addListener(
+			OMV_NOTIFY_MODIFY,
+			"org.openmediavault.conf.system.apt.updates",
 			[$this, "setDirty"]);
 		$dispatcher->addListener(
 			OMV_NOTIFY_MODIFY,

@@ -4,15 +4,15 @@
 # 
 # Translators:
 # Андрей Чапалда <ansilent@gmail.com>, 2012
-# zubr139, 2013-2019,2021-2022
+# zubr139, 2013-2019,2021-2022,2025
 # Андрей Чапалда <ansilent@gmail.com>, 2012
 msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-12 10:32+0100\n"
+"POT-Creation-Date: 2025-02-14 00:18+0100\n"
 "PO-Revision-Date: 2012-03-17 01:48+0000\n"
-"Last-Translator: zubr139, 2013-2019,2021-2022\n"
+"Last-Translator: zubr139, 2013-2019,2021-2022,2025\n"
 "Language-Team: Ukrainian (http://app.transifex.com/openmediavault/openmediavault/language/uk/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -230,19 +230,22 @@ msgstr "750 МБ"
 msgid "9 months"
 msgstr "9 місяців"
 
+msgid "A (5 GHz)"
+msgstr ""
+
 msgid ""
 "A reboot is needed to fully apply the changes introduced by package "
 "installation or upgrade."
-msgstr ""
+msgstr "Щоб повністю застосувати зміни, внесені під час інсталяції або оновлення пакета, потрібне перезавантаження."
 
 msgid "A running background task was detected."
-msgstr ""
+msgstr "Виявлено запущене фонове завдання."
 
 msgid "A scheduled task to create a snapshot has been created."
-msgstr ""
+msgstr "Створено заплановане завдання для створення знімка."
 
 msgid "A secure shell (SSH) server."
-msgstr ""
+msgstr "Сервер безпечної оболонки (SSH)."
 
 msgid "ACL"
 msgstr "Список контролю доступа"
@@ -273,13 +276,13 @@ msgid ""
 "Activate S.M.A.R.T. monitoring for this device. Note that only monitored "
 "devices are listed in the scheduled tasks. Monitoring cannot be switched off"
 " as long as there are scheduled tasks for this device."
-msgstr ""
+msgstr "Активуйте S.M.A.R.T. моніторинг для цього пристрою. Зауважте, що в запланованих завданнях указано лише контрольовані пристрої. Моніторинг не можна вимкнути, поки для цього пристрою є заплановані завдання."
 
 msgid "Active"
 msgstr "Активний"
 
 msgid "Active or Idle"
-msgstr ""
+msgstr "Активний або неактивний"
 
 msgid "Add"
 msgstr "Додати"
@@ -333,8 +336,21 @@ msgid "All packages will be upgraded. Do you want to proceed?"
 msgstr "Усі пакунки будуть оновлені. Продовжити?"
 
 msgid ""
-"Allow clients to attempt to store OS/2 state extended attributes on a share."
-msgstr "Дозволити клієнтам намагатися зберігати розширені атрибути стану OS/2 у спільній теці."
+"Allow clients to attempt to access extended attributes on a share. The "
+"underlying filesystem exposed by the share must support extended attributes."
+msgstr ""
+
+msgid "Allow following symbolic links in the home directories."
+msgstr ""
+
+msgid "Allow following symbolic links in the share."
+msgstr ""
+
+msgid "Allow symbolic links to areas that are outside the home directories."
+msgstr ""
+
+msgid "Allow symbolic links to areas that are outside the share."
+msgstr ""
 
 msgid ""
 "Allow this server to advertise itself as a time server to Windows clients."
@@ -449,17 +465,20 @@ msgstr "Аутентифікація"
 msgid "Authentication required"
 msgstr "Потрібна аутентифікація"
 
-msgid "Auto"
-msgstr "Авто"
+msgid "Automatic"
+msgstr ""
 
-msgid "Auto logout"
-msgstr "Автоматичний вихід із системи"
+msgid "Automatic logout"
+msgstr ""
 
 msgid "Available"
 msgstr "Доступно"
 
 msgid "Azerbaijan"
 msgstr "Азербайджан"
+
+msgid "B/G (2.4 GHz)"
+msgstr ""
 
 msgid "Back"
 msgstr "Назад"
@@ -475,6 +494,9 @@ msgstr "Багами"
 
 msgid "Bahrain"
 msgstr "Бахрейн"
+
+msgid "Band"
+msgstr ""
 
 msgid "Bangladesh"
 msgstr "Банґладеш"
@@ -745,9 +767,6 @@ msgstr "Копіювати"
 
 msgid "Copy permissions"
 msgstr ""
-
-msgid "Copy public SSH key"
-msgstr "Копіювати загальнодоступний ключ SSH"
 
 msgid "Copy to clipboard"
 msgstr "Копіювати в буфер обміну"
@@ -1284,6 +1303,9 @@ msgstr "Версія прошивки"
 msgid "Flags"
 msgstr "Прапори"
 
+msgid "Follow symlinks"
+msgstr ""
+
 msgid "Force SSL/TLS"
 msgstr "Примусово SSL/TLS"
 
@@ -1588,6 +1610,12 @@ msgstr "Встановити"
 
 msgid "Install plugin"
 msgstr "Встановити плагін"
+
+msgid "Install public key to remote machine"
+msgstr ""
+
+msgid "Install security updates unattended."
+msgstr ""
 
 msgid "Install updates"
 msgstr "Встановити оновлення"
@@ -2339,6 +2367,9 @@ msgstr ""
 msgid "Please choose the method to wipe the device."
 msgstr "Виберіть спосіб очищення пристрою."
 
+msgid "Please note that values >= 128 do not permit the disk to spin down."
+msgstr ""
+
 msgid "Please wait ..."
 msgstr "Зачекайте..."
 
@@ -2346,7 +2377,7 @@ msgid "Please wait, a shared folder will be created ..."
 msgstr ""
 
 msgid "Please wait, a snapshot will be created ..."
-msgstr ""
+msgstr "Зачекайте, створюється знімок..."
 
 msgid "Please wait, deleting selected item(s) ..."
 msgstr "Будь ласка, зачекайте, видалення обраних елементів ..."
@@ -2905,7 +2936,7 @@ msgid "Shared folder path"
 msgstr "Шлях до спільної теки"
 
 msgid "Shared folder permissions"
-msgstr ""
+msgstr "Дозволи для спільної теки"
 
 msgid "Shared folder permissions have been copied."
 msgstr ""
@@ -2956,6 +2987,9 @@ msgid "Slovenia"
 msgstr "Словенія"
 
 msgid "Snapshots"
+msgstr ""
+
+msgid "Software"
 msgstr ""
 
 msgid "Software Failure.   Press left mouse button to continue."
@@ -3155,7 +3189,7 @@ msgid "TCP forwarding"
 msgstr "TCP переадресація"
 
 msgid "Tags"
-msgstr ""
+msgstr "Теги"
 
 msgid "Taiwan"
 msgstr "Тайвань"
@@ -3918,7 +3952,7 @@ msgid ""
 msgstr ""
 
 msgid "Utilization"
-msgstr ""
+msgstr "Утилізація"
 
 msgid "Uzbekistan"
 msgstr "Узбекистан"
@@ -3954,7 +3988,7 @@ msgid "Version"
 msgstr "Версія"
 
 msgid "Versions"
-msgstr ""
+msgstr "Версії"
 
 msgid "Vietnam"
 msgstr "В'єтнам"
@@ -4000,6 +4034,9 @@ msgstr "Західна Сахара"
 
 msgid "Wi-Fi"
 msgstr "Wi-Fi"
+
+msgid "Wide links"
+msgstr ""
 
 msgid "Wipe"
 msgstr "Стерти"

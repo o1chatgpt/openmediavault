@@ -4,7 +4,7 @@
  *
  * @license   http://www.gnu.org/licenses/gpl.html GPL Version 3
  * @author    Volker Theile <volker.theile@openmediavault.org>
- * @copyright Copyright (c) 2009-2024 Volker Theile
+ * @copyright Copyright (c) 2009-2025 Volker Theile
  *
  * OpenMediaVault is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -66,16 +66,10 @@ class FsTab extends \OMV\Rpc\ServiceAbstract {
 	 * @return The requested configuration object.
 	 */
 	function get($params, $context) {
-		// Validate the RPC caller context.
-		$this->validateMethodContext($context, [
-			"role" => OMV_ROLE_ADMINISTRATOR
-		]);
-		// Validate the parameters of the RPC service method.
-		$this->validateMethodParams($params, "rpc.common.objectuuid");
-		// Get the configuration object.
-		$db = \OMV\Config\Database::getInstance();
-		return $db->getAssoc("conf.system.filesystem.mountpoint",
-			$params['uuid']);
+		return \OMV\Rpc\Rpc::call("Config", "get", [
+			"id" => "conf.system.filesystem.mountpoint",
+			"uuid" => $params['uuid']
+		], $context);
 	}
 
 	/**

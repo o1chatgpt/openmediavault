@@ -4,7 +4,7 @@
  *
  * @license   http://www.gnu.org/licenses/gpl.html GPL Version 3
  * @author    Volker Theile <volker.theile@openmediavault.org>
- * @copyright Copyright (c) 2009-2024 Volker Theile
+ * @copyright Copyright (c) 2009-2025 Volker Theile
  *
  * OpenMediaVault is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -272,7 +272,7 @@ class DiskMgmt extends \OMV\Rpc\ServiceAbstract {
 				$cmdArgs[] = "if=/dev/zero";
 				$cmdArgs[] = sprintf("of=%s", escapeshellarg(
 					$bd->getDeviceFile()));
-				$cmdArgs[] = "bs=4M";
+				$cmdArgs[] = "bs=10M";
 				$cmdArgs[] = "count=1";
 				$cmd = new \OMV\System\Process("dd", $cmdArgs);
 				$cmd->setRedirect2to1();
@@ -285,7 +285,7 @@ class DiskMgmt extends \OMV\Rpc\ServiceAbstract {
 				// BC math functions.
 				$sectorSize = $bd->getSectorSize();
 				$sizeInSectors = bcdiv($bd->getSize(), strval($sectorSize), 0);
-				$count = bcdiv("4194304", strval($sectorSize), 0); // 4MiB
+				$count = bcdiv("10485760", strval($sectorSize), 0); // 10MiB
 				$seek = bcsub($sizeInSectors, $count, 0);
 				$cmdArgs = [];
 				$cmdArgs[] = "if=/dev/zero";

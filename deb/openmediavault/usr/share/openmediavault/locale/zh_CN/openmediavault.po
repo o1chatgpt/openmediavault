@@ -14,7 +14,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-12 10:32+0100\n"
+"POT-Creation-Date: 2025-02-14 00:18+0100\n"
 "PO-Revision-Date: 2012-03-17 01:48+0000\n"
 "Last-Translator: songming <by@songming.me>, 2013-2024\n"
 "Language-Team: Chinese (China) (http://app.transifex.com/openmediavault/openmediavault/language/zh_CN/)\n"
@@ -234,6 +234,9 @@ msgstr "750 MiB"
 msgid "9 months"
 msgstr "9 月"
 
+msgid "A (5 GHz)"
+msgstr "A (5 GHz)"
+
 msgid ""
 "A reboot is needed to fully apply the changes introduced by package "
 "installation or upgrade."
@@ -337,8 +340,21 @@ msgid "All packages will be upgraded. Do you want to proceed?"
 msgstr "所有软件包将升级，您确定要继续？"
 
 msgid ""
-"Allow clients to attempt to store OS/2 state extended attributes on a share."
-msgstr "允许客户端尝试在共享上存储 OS / 2 风格的扩展属性。"
+"Allow clients to attempt to access extended attributes on a share. The "
+"underlying filesystem exposed by the share must support extended attributes."
+msgstr "允許客戶端嘗試存取共享上的擴展屬性。共享所暴露的底層檔案系統必須支援擴展屬性。"
+
+msgid "Allow following symbolic links in the home directories."
+msgstr "允許在家目錄中使用以下符號連結。"
+
+msgid "Allow following symbolic links in the share."
+msgstr "允許在分享中使用以下符號連結。"
+
+msgid "Allow symbolic links to areas that are outside the home directories."
+msgstr "允許符號連結到家目錄以外的區域。"
+
+msgid "Allow symbolic links to areas that are outside the share."
+msgstr "允許符號連結到分享以外的區域。"
 
 msgid ""
 "Allow this server to advertise itself as a time server to Windows clients."
@@ -453,17 +469,20 @@ msgstr "验证"
 msgid "Authentication required"
 msgstr "需要验证"
 
-msgid "Auto"
-msgstr "自动"
+msgid "Automatic"
+msgstr "自動"
 
-msgid "Auto logout"
-msgstr "自动登出"
+msgid "Automatic logout"
+msgstr "自動登出"
 
 msgid "Available"
 msgstr "可用"
 
 msgid "Azerbaijan"
 msgstr "阿塞拜疆"
+
+msgid "B/G (2.4 GHz)"
+msgstr "B/G (2.4 GHz)"
 
 msgid "Back"
 msgstr "返回"
@@ -479,6 +498,9 @@ msgstr "巴哈马"
 
 msgid "Bahrain"
 msgstr "巴林"
+
+msgid "Band"
+msgstr "頻帶"
 
 msgid "Bangladesh"
 msgstr "孟加拉"
@@ -749,9 +771,6 @@ msgstr "复制"
 
 msgid "Copy permissions"
 msgstr "複製權限"
-
-msgid "Copy public SSH key"
-msgstr "复制 SSH 公钥"
 
 msgid "Copy to clipboard"
 msgstr "复制到剪贴板"
@@ -1288,6 +1307,9 @@ msgstr "固件版本"
 msgid "Flags"
 msgstr "标签"
 
+msgid "Follow symlinks"
+msgstr "跟隨符號連結"
+
 msgid "Force SSL/TLS"
 msgstr "强制使用 SSL/TLS"
 
@@ -1592,6 +1614,12 @@ msgstr "安装"
 
 msgid "Install plugin"
 msgstr "安装插件 ..."
+
+msgid "Install public key to remote machine"
+msgstr "安裝公鑰到遠端機器"
+
+msgid "Install security updates unattended."
+msgstr "無人管顧安裝安全更新。"
 
 msgid "Install updates"
 msgstr "安装更新 ..."
@@ -2343,6 +2371,9 @@ msgstr "详情请看 <a href='https://manpages.debian.org/nfs-kernel-server/expo
 msgid "Please choose the method to wipe the device."
 msgstr "请选择该设备的擦除方式。"
 
+msgid "Please note that values >= 128 do not permit the disk to spin down."
+msgstr "請注意當值 >= 128 時，將不允許磁碟停止轉動。"
+
 msgid "Please wait ..."
 msgstr "请稍等 ..."
 
@@ -2961,6 +2992,9 @@ msgstr "斯罗文尼亚"
 
 msgid "Snapshots"
 msgstr "快照"
+
+msgid "Software"
+msgstr "軟體"
 
 msgid "Software Failure.   Press left mouse button to continue."
 msgstr "软件错误。   按鼠标左键继续。"
@@ -4004,6 +4038,9 @@ msgstr "西撒哈拉"
 
 msgid "Wi-Fi"
 msgstr "Wi-Fi"
+
+msgid "Wide links"
+msgstr "寬連結"
 
 msgid "Wipe"
 msgstr "擦除"

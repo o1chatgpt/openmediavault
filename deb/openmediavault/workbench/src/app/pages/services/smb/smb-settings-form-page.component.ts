@@ -3,7 +3,7 @@
  *
  * @license   http://www.gnu.org/licenses/gpl.html GPL Version 3
  * @author    Volker Theile <volker.theile@openmediavault.org>
- * @copyright Copyright (c) 2009-2024 Volker Theile
+ * @copyright Copyright (c) 2009-2025 Volker Theile
  *
  * OpenMediaVault is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -115,6 +115,34 @@ export class SmbSettingsFormPageComponent extends BaseFormPageComponent {
         label: gettext('Enable recycle bin'),
         hint: gettext('This will create a recycle bin for each user home directory.'),
         value: false
+      },
+      {
+        type: 'checkbox',
+        name: 'homesfollowsymlinks',
+        label: gettext('Follow symlinks'),
+        hint: gettext('Allow following symbolic links in the home directories.'),
+        value: true,
+        modifiers: [
+          {
+            type: 'checked',
+            opposite: false,
+            constraint: { operator: 'truthy', arg0: { prop: 'homeswidelinks' } }
+          }
+        ]
+      },
+      {
+        type: 'checkbox',
+        name: 'homeswidelinks',
+        label: gettext('Wide links'),
+        hint: gettext('Allow symbolic links to areas that are outside the home directories.'),
+        value: false,
+        modifiers: [
+          {
+            type: 'unchecked',
+            opposite: false,
+            constraint: { operator: 'falsy', arg0: { prop: 'homesfollowsymlinks' } }
+          }
+        ]
       },
       {
         type: 'textarea',

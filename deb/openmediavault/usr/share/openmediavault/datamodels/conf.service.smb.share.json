@@ -62,7 +62,7 @@
 		},
 		"easupport": {
 			"type": "boolean",
-			"default": false
+			"default": true
 		},
 		"storedosattributes": {
 			"type": "boolean",
@@ -83,6 +83,14 @@
 			"default": false
 		},
 		"transportencryption": {
+			"type": "boolean",
+			"default": false
+		},
+		"followsymlinks": {
+			"type": "boolean",
+			"default": true
+		},
+		"widelinks": {
 			"type": "boolean",
 			"default": false
 		},

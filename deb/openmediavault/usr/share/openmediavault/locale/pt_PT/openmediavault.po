@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: openmediavault\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-12 10:32+0100\n"
+"POT-Creation-Date: 2025-02-14 00:18+0100\n"
 "PO-Revision-Date: 2012-03-17 01:48+0000\n"
 "Last-Translator: Renan Costa Alencar <renan.costaalencar@gmail.com>, 2024\n"
 "Language-Team: Portuguese (Portugal) (http://app.transifex.com/openmediavault/openmediavault/language/pt_PT/)\n"
@@ -230,6 +230,9 @@ msgstr "750 MiB"
 msgid "9 months"
 msgstr "9 meses"
 
+msgid "A (5 GHz)"
+msgstr ""
+
 msgid ""
 "A reboot is needed to fully apply the changes introduced by package "
 "installation or upgrade."
@@ -333,7 +336,20 @@ msgid "All packages will be upgraded. Do you want to proceed?"
 msgstr ""
 
 msgid ""
-"Allow clients to attempt to store OS/2 state extended attributes on a share."
+"Allow clients to attempt to access extended attributes on a share. The "
+"underlying filesystem exposed by the share must support extended attributes."
+msgstr ""
+
+msgid "Allow following symbolic links in the home directories."
+msgstr ""
+
+msgid "Allow following symbolic links in the share."
+msgstr ""
+
+msgid "Allow symbolic links to areas that are outside the home directories."
+msgstr ""
+
+msgid "Allow symbolic links to areas that are outside the share."
 msgstr ""
 
 msgid ""
@@ -449,17 +465,20 @@ msgstr "Autenticação"
 msgid "Authentication required"
 msgstr "Autenticação necessária"
 
-msgid "Auto"
-msgstr "Auto"
+msgid "Automatic"
+msgstr ""
 
-msgid "Auto logout"
-msgstr "Auto logout"
+msgid "Automatic logout"
+msgstr ""
 
 msgid "Available"
 msgstr "Disponivel"
 
 msgid "Azerbaijan"
 msgstr "Azerbeijão"
+
+msgid "B/G (2.4 GHz)"
+msgstr ""
 
 msgid "Back"
 msgstr "Voltar"
@@ -475,6 +494,9 @@ msgstr "Bahamas"
 
 msgid "Bahrain"
 msgstr "Bahrain"
+
+msgid "Band"
+msgstr ""
 
 msgid "Bangladesh"
 msgstr "Bangladesh"
@@ -745,9 +767,6 @@ msgstr "Copiar"
 
 msgid "Copy permissions"
 msgstr "Copiar permissões"
-
-msgid "Copy public SSH key"
-msgstr ""
 
 msgid "Copy to clipboard"
 msgstr "Copiar para memória"
@@ -1284,6 +1303,9 @@ msgstr "Versão Firmware"
 msgid "Flags"
 msgstr "Flags"
 
+msgid "Follow symlinks"
+msgstr ""
+
 msgid "Force SSL/TLS"
 msgstr "Forçar SSL/TLS"
 
@@ -1587,6 +1609,12 @@ msgid "Install"
 msgstr "Instalar"
 
 msgid "Install plugin"
+msgstr ""
+
+msgid "Install public key to remote machine"
+msgstr ""
+
+msgid "Install security updates unattended."
 msgstr ""
 
 msgid "Install updates"
@@ -2339,6 +2367,9 @@ msgstr ""
 msgid "Please choose the method to wipe the device."
 msgstr ""
 
+msgid "Please note that values >= 128 do not permit the disk to spin down."
+msgstr ""
+
 msgid "Please wait ..."
 msgstr "Por favor, espere..."
 
@@ -2956,6 +2987,9 @@ msgid "Slovenia"
 msgstr "Eslovênia"
 
 msgid "Snapshots"
+msgstr ""
+
+msgid "Software"
 msgstr ""
 
 msgid "Software Failure.   Press left mouse button to continue."
@@ -4000,6 +4034,9 @@ msgstr "Western Sahara"
 
 msgid "Wi-Fi"
 msgstr "Wi-Fi"
+
+msgid "Wide links"
+msgstr ""
 
 msgid "Wipe"
 msgstr "Limpar"
